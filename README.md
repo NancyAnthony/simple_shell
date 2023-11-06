@@ -1,0 +1,25 @@
+This is a group project between BARRY and NANCY, the name of the project is simple_shell and the task is to create a shell.The files in this project includes:
+builtin0.c
+builtin2.c
+err_1.c
+errs.c
+exit.c
+get_environ.c
+get_information.c
+get_line.c
+getenvy.c
+handle_history.c
+handle_lists.c
+handle_lists1.
+handle_memory.c
+handle_parser.c
+handle_reallocate_mem.c
+handle_shell_loop.c
+handle_string.c
+handle_string1.c
+handle_token.c
+handles_atoi.c
+handle_vars.c
+main.c
+manual
+README.md
