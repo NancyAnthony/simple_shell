@@ -7,13 +7,13 @@
  */
 char **get_envy(info_t *information)
 {
-	if (!inf->environ || inf->env_changed)
+	if (!information->environ || information->env_changed)
 	{
-		inf->environ = handle_list_to_str(inf->env);
-		inf->env_changed = 0;
+		information->environ = handle_list_to_str(information->env);
+		information->env_changed = 0;
 	}
 
-	return (inf->environ);
+	return (information->environ);
 }
 
 /**

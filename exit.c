@@ -20,11 +20,12 @@ char *_strcp(char *des, char *stc, int no)
 	}
 	if (j < no)
 	{
-		j = j;
-		while (j < no)
+		
+		l = j;
+		while (l < no)
 		{
-			des[j] = '\0';
-			j++;
+			des[l] = '\0';
+			l++;
 		}
 	}
 	return (s);

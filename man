@@ -1,0 +1,54 @@
+#cd: cd
+  Change the current working directory within the shell.
+
+  By specifying the DIR argument, you can set the current directory to a new location. If no DIR is provided, the default 
+  directory is set to the value of the HOME shell variable.
+
+  The CDPATH variable defines a search path for the directory containing DIR. Multiple alternative directory names in CDPATH 
+  are separated by colons (':'). An empty directory name in CDPATH represents the current directory. If DIR begins with a 
+  slash ('/'), CDPATH is not used in the directory change process.
+
+  Exit Status:
+  Returns a 0 if the directory is successfully changed, and if $PWD is appropriately set when using the -P option; 
+  otherwise, it returns a non-zero status.
+
+#env: env
+  Print the current environment.
+
+  Options:
+  NONE
+
+  Output the environment to the standard output.
+
+#alias: alias
+  Define or display command aliases.
+
+  When invoked without arguments, 'alias' prints the list of aliases in the reusable format 'alias NAME=VALUE' on the       
+  standard output.
+
+  With additional arguments, an alias is created for each NAME, and its VALUE is specified.
+  If there is a trailing space in VALUE, the next word is examined for alias substitution when the alias is expanded.
+
+  Options:
+  NONE
+
+  Exit Status:
+  Returns a true status unless a NAME is provided for which no alias has been defined.
+
+#help: help
+  Retrieve information about built-in commands.
+
+  Displays concise summaries of built-in commands. If a PATTERN is
+  specified, it offers detailed help on all commands matching PATTERN; 
+  otherwise, it prints the list of available help topics.
+
+  Exit Status:
+  Returns success unless PATTERN is not found or an invalid option is provided.
+
+#history: history
+  View or manipulate the command history list.
+
+  Displays the command history list with line numbers, marking each modified entry with an asterisk (*). If you provide an argument N, it lists only the last N entries.
+
+  Exit Status:
+  Returns success unless an invalid option is used or an error occurs.

@@ -12,7 +12,7 @@ int cv_str(char *r)
 	unsigned long int result = 0;
 
 	if (*r == '+')
-		r++;  /* TODO: why does this make main return 255? */
+		r++;  /* why does this make main return 255? */
 	for (j = 0;  r[j] != '\0'; j++)
 	{
 		if (r[j] >= '0' && r[j] <= '9')
@@ -37,13 +37,13 @@ int cv_str(char *r)
  */
 void prt_err(info_t *infor, char *err_str)
 {
-	_epts(info->fname);
+	_epts(infor->fname);
 	_epts(": ");
-	print_de(info->line_count, STDERR_FILENO);
+	print_de(infor->line_count, STDERR_FILENO);
 	_epts(": ");
-	_epts(info->argv[0]);
+	_epts(infor->argv[0]);
 	_epts(": ");
-	_epts(estr);
+	_epts(err_str);
 }
 
 /**

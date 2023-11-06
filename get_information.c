@@ -49,7 +49,7 @@ void set_infor(info_t *infor, char **v)
  * @infor: struct address
  * @f: true if freeing all the fields
  */
-void free_information(info_t *infor, int f)
+void free_infor(info_t *infor, int f)
 {
 	str_free(infor->argv);
 	infor->argv = NULL;
