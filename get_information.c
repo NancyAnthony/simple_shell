@@ -45,7 +45,7 @@ void set_infor(info_t *infor, char **v)
 }
 
 /**
- * free_information -it frees the info_t struct fields
+ * free_infor -it frees the info_t struct fields
  * @infor: struct address
  * @f: true if freeing all the fields
  */

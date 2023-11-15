@@ -20,7 +20,6 @@ char *_strcp(char *des, char *stc, int no)
 	}
 	if (j < no)
 	{
-		
 		l = j;
 		while (l < no)
 		{
